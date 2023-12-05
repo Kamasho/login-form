@@ -144,3 +144,32 @@ button{
 .form-check-label{
     color: rgb(73, 73, 226);
 }
+.menu-button{
+    display: none;
+}
+
+@media only screen and (max-width: 991px){
+    .menu-button{
+        display: block;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+    }
+    .links{
+        display: none;
+    }
+
+    .menu-button .active + .links {
+        display: block;
+    }
+
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+
+    .logoImage{
+        height: 40px;
+        width: 40px;
+    }
+}
